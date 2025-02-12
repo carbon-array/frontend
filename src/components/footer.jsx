@@ -7,7 +7,7 @@ const footer = () => {
           {/* Left Section */}
           <div>
             <div className="text-2xl font-semibold tracking-[0.2em] flex items-center">
-              B<span className="text-lg">⌄</span>T L E R
+              CarbonArray
             </div>
             <div className="mt-2 border px-3 py-1 rounded-full flex items-center gap-2 text-gray-700 text-xs">
               <span className="w-2 h-2 bg-green-500 rounded-full"></span>

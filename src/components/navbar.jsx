@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto flex justify-between items-center font-sans">
         {/* Logo */}
         <div className="text-black text-2xl font-semibold tracking-[0.2em] flex items-center">
-          B<span className="text-lg">⌄</span>T L E R
+          CarbonArray
         </div>
         
         
@@ -33,7 +33,7 @@ export default function Navbar() {
           className="bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
           onClick={() => alert("Login button clicked")}
         >
-          Login <span className="text-xs bg-gray-700 px-2 py-1 rounded">L</span>
+          Login <span className="ml-1 rounded border border-gray-600 px-1 font-mono">L</span>
         </button>
       </div>
     </nav>

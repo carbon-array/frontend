@@ -13,7 +13,7 @@ const footer = () => {
               <span className="w-2 h-2 bg-green-500 rounded-full"></span>
               All systems operational
             </div>
-            <p className="mt-4 text-xs text-gray-500">© 2025 Goodie Labs, Inc. All rights reserved.</p>
+            <p className="mt-4 text-xs text-gray-500">© 2025 Carbon Array, Inc. All rights reserved.</p>
           </div>
   
           {/* Right Sections */}

@@ -14,7 +14,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleKeyPress = (event) => {
-      if (event.key === "L" || event.key === "l") {
+      if (event.key === "L" || event.key === "U") {
         event.preventDefault();
         alert("Login button clicked");
       }
@@ -25,9 +25,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 ${scrollY > 50 ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 rounded-b-lg z-50
+        ${scrollY > 50 ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
-      <div className="max-w-5xl mx-auto flex justify-between items-center font-sans">
+      <div className="max-w-4xl mx-auto flex justify-between items-center font-sans px-4 py-2">
         {/* Logo with Image */}
         <div className="flex items-center space-x-2">
           <img src={Logo} alt="CarbonArray Logo" className="h-15 w-auto" />
@@ -35,7 +36,7 @@ export default function Navbar() {
 
         {/* Navigation Links and Sign Up Button */}
         <div className="flex gap-6 ml-auto items-center">
-          <ul className=" text-black px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2">
+          <ul className="text-black px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2">
             <li><a href="#" className="hover:text-gray-600">Login</a></li>
           </ul>
 
@@ -44,7 +45,7 @@ export default function Navbar() {
             className="bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
             onClick={() => alert("Login button clicked")}
           >
-            Sign Up <span className="ml-1 rounded border border-gray-600 px-1 font-mono">S</span>
+            Sign Up
           </button>
         </div>
       </div>

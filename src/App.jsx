@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/footer.jsx";
 import Hero from "./components/hero.jsx";
-import Connectors from "./components/connectors.jsx"; // Import the Hero component
+import Connectors from "./components/connectors.jsx";
+import Text from "./components/text.jsx"; 
+import FAQ from "./components/faqs.jsx";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -27,10 +29,10 @@ function App() {
       <br />
       <br />
       <br />
-      <h1 className="max-w-4xl mx-auto text-center pt-16  font-bold transition-colors duration-300" style={{ color: scrollY > 200 ? "black" : "gray" }}>
-        Lor
-      </h1>
+      <Text/>
+
       <Connectors/>
+      <FAQ />
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 // Footer Component
+import Logo from "../assets/CarbonArray-Nav.png";
 const footer = () => {
     return (
       <footer className="bg-white p-6 mt-12 border-t">
@@ -6,12 +7,8 @@ const footer = () => {
           
           {/* Left Section */}
           <div>
-            <div className="text-2xl font-semibold tracking-[0.2em] flex items-center">
-              CarbonArray
-            </div>
-            <div className="mt-2 border px-3 py-1 rounded-full flex items-center gap-2 text-gray-700 text-xs">
-              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-              All systems operational
+            <div className="flex items-center space-x-2">
+                <img src={Logo} alt="CarbonArray Logo" className="h-15 w-auto" />
             </div>
             <p className="mt-4 text-xs text-gray-500">© 2025 Carbon Array, Inc. All rights reserved.</p>
           </div>

@@ -9,7 +9,7 @@ export default function Signup() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 mt-20"> {/* Added margin-top here */}
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         {/* Logo at the top (Clickable) */}
         <div className="flex justify-center mb-4">

@@ -4,9 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/frontend/",
-  build: {
-    outDir: "dist",
-  },
+  base: "/frontend",
   plugins: [tailwindcss(), react()],
 });

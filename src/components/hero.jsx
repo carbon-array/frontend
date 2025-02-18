@@ -1,6 +1,23 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Logo2 from "../assets/hero-main.png"; // Adjust path if needed
 
 export default function Hero() {
+  const navigate = useNavigate(); // Hook for navigation
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      // Check for Shift+L combination
+      if (event.key === "S" && event.shiftKey) {
+        event.preventDefault();
+        navigate("/signup"); // Navigate to Signup page
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+    return () => window.removeEventListener("keydown", handleKeyPress);
+  }, [navigate]);
+
   return (
     <div className="w-full max-w-4xl mx-auto text-center pt-16">
       <h1 className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-5xl font-semibold text-black md:text-7xl">
@@ -10,19 +27,18 @@ export default function Hero() {
       <br />
       <br />
       <h2>
-      CarbonArray optimizes the exchange process of carbon credits for a sustainable future. <br />Focus on trading, not complexities. 
+        CarbonArray optimizes the exchange process of carbon credits for a sustainable future. <br />Focus on trading, not complexities.
       </h2>
       <br />
       <br />
 
-      
       {/* Center align button */}
       <div className="flex justify-center">
-        <button 
+        <button
           className="bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
-          onClick={() => alert("Login button clicked")}
+          onClick={() => navigate("/signup")} // Navigate to Signup page on button click
         >
-          Sign Up <span className="ml-1 rounded border border-gray-600 px-1 font-mono">L</span>
+          Sign Up <span className="ml-1 rounded border border-gray-600 px-1 font-mono">S</span>
         </button>
       </div>
 

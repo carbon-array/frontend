@@ -4,20 +4,20 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "How can I ensure my data is secure?",
-    answer: "We use industry-standard encryption and security protocols to protect your data.",
+    question: "What is a carbon credit?",
+    answer: " A carbon credit is a permit that allows the holder to emit one metric tonne of carbon dioxide or its equivalent in other greenhouse gases.",
   },
   {
-    question: "Do you train models on my data?",
-    answer: "No, we do not use your data to train models. Your privacy is our priority.",
+    question: "How does your carbon credit exchange work?",
+    answer: "Our platform facilitates the buying and selling of carbon credits, providing a marketplace for users to trade verified emissions reductions.",
   },
   {
-    question: "How do connectors work?",
-    answer: "Connectors allow seamless data integration between different platforms and services.",
+    question: "What are the benefits of using your platform to trade carbon credits?",
+    answer: "We offer transparency, security, and ease of use for trading carbon credits, with tools to track and verify each credit's history.",
   },
   {
-    question: "How do automations work?",
-    answer: "Automations streamline workflows by executing tasks based on predefined triggers.",
+    question: "How do you ensure the quality and validity of carbon credits traded on your platform?",
+    answer: "All credits are verified by accredited third parties, and our platform conducts additional checks to ensure high environmental integrity.",
   },
 ];
 

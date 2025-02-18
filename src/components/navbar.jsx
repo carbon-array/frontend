@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Logo from "../assets/CarbonArray-Nav.png"; // Adjust path if needed
 
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0);
+  const navigate = useNavigate(); // Hook for navigation
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +18,12 @@ export default function Navbar() {
     const handleKeyPress = (event) => {
       if (event.key === "L" || event.key === "U") {
         event.preventDefault();
-        alert("Login button clicked");
+        navigate("/login"); // Navigate to login when L or U is pressed
       }
     };
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, []);
+  }, [navigate]);
 
   return (
     <nav
@@ -29,21 +31,25 @@ export default function Navbar() {
         ${scrollY > 50 ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
       <div className="max-w-4xl mx-auto flex justify-between items-center font-sans px-4 py-2">
-        {/* Logo with Image */}
-        <div className="flex items-center space-x-2">
-          <img src={Logo} alt="CarbonArray Logo" className="h-15 w-auto" />
-        </div>
+        {/* Logo (Clickable) */}
+        <button onClick={() => navigate("/")} className="flex items-center">
+          <img src={Logo} alt="CarbonArray Logo" className="h-15 w-auto cursor-pointer" />
+        </button>
 
-        {/* Navigation Links and Sign Up Button */}
+        {/* Navigation Links and Buttons */}
         <div className="flex gap-6 ml-auto items-center">
-          <ul className="text-black px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2">
-            <li><a href="#" className="hover:text-gray-600">Login</a></li>
-          </ul>
+          {/* Login Button */}
+          <button 
+            className="text-black px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
+            onClick={() => navigate("/login")}
+          >
+            Login
+          </button>
 
           {/* Sign Up Button */}
           <button 
             className="bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
-            onClick={() => alert("Login button clicked")}
+            onClick={() => navigate("/signup")} // Navigate to Signup page
           >
             Sign Up
           </button>

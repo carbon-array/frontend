@@ -7,10 +7,9 @@ export default function Connectors() {
   
     return (
       <div className="w-full py-16 bg-white text-center">
-        <h2 className="text-4xl font-bold">Connectors</h2>
+        <h2 className="text-4xl font-bold">Our Clients & Collaborations</h2>
         <p className="text-gray-500 max-w-2xl mx-auto mt-2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis omnis delectus dicta, sequi quis deserunt rem explicabo? Illo nesciunt molestiae saepe hic culpa sed qui omnis cum fuga ducimus!
-        </p>
+        Engage with pioneers in sustainability who are transforming our world with innovative solutions. Collaborate with our team of experts to make a lasting impact on the environment.        </p>
   
         <div className="flex justify-center mt-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

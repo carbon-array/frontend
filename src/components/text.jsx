@@ -19,16 +19,13 @@ export default function Text() {
     <div className="w-full max-w-3xl mx-auto text-center py-16">
       <div className="transition-text">
         <p
-          className="text-lg md:text-2xl font-medium transition-all duration-300"
+          className="text-lg md:text-2xl font-medium transition-all duration-300 text-left" // Added text-left here
           style={{
             color: `rgb(${scrollPercent * 0}, ${scrollPercent * 0}, ${scrollPercent * 0})`,
             opacity: `${0.3 + scrollPercent * 0.7}`,
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
-          Duis vehicula ex nec ligula venenatis, sed consequat magna tincidunt. 
-          Vivamus luctus elit nec orci congue, sit amet interdum nunc ullamcorper.
-        </p>
+        Our startup is pioneering a digital carbon credit exchange platform to transform the way carbon credits are traded by offering a seamless, transparent exchange process.  Our digital exchange aims to enhance visibility, ensure fair pricing, and promote the participation for wide scale adoption to create a sustainable future.        </p>
       </div>
     </div>
   );

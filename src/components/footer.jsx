@@ -19,8 +19,8 @@ const footer = () => {
               <h3 className="font-semibold mb-2">Social</h3>
               <ul className="space-y-1">
                 <li><a href="#" className="hover:opacity-70">LinkedIn</a></li>
-                <li><a href="#" className="hover:opacity-70">Twitter</a></li>
-                <li><a href="#" className="hover:opacity-70">Discord</a></li>
+                <li><a href="#" className="hover:opacity-70">Email</a></li>
+                <li><a href="#" className="hover:opacity-70">Instagram</a></li>
               </ul>
             </div>
             <div>

@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from "../assets/CarbonArray-Nav.png"; // Adjust path if needed
+import Logo from "../assets/CarbonArray-Nav.png";
+import Logo2 from "../assets/google.png"; // Corrected path
 import { FiEye, FiEyeOff } from "react-icons/fi"; // Import eye icons
 
 export default function Signup() {
-  const [passwordVisible, setPasswordVisible] = useState(false); // State to toggle password visibility
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -41,11 +42,10 @@ export default function Signup() {
           <div className="mb-4 relative">
             <label className="block text-gray-700">Password</label>
             <input
-              type={passwordVisible ? "text" : "password"} // Conditionally show password
+              type={passwordVisible ? "text" : "password"}
               className="w-full p-2 border rounded mt-1"
               placeholder="Create a password"
             />
-            {/* Eye icon to toggle password visibility */}
             <span
               onClick={() => setPasswordVisible(!passwordVisible)}
               className="absolute right-3 top-9 cursor-pointer"
@@ -66,13 +66,9 @@ export default function Signup() {
           <hr className="flex-grow border-gray-300" />
         </div>
 
-        {/* Google Signup Button */}
+        {/* Google Signup Button - Fixed Image Path */}
         <button className="w-full border py-2 rounded flex items-center justify-center gap-2 hover:bg-gray-200">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-            alt="Google Logo"
-            className="h-5 w-5"
-          />
+          <img src={Logo2} alt="Google Logo" className="h-5 w-5" />
           Sign Up with Google
         </button>
 

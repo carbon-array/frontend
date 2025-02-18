@@ -16,16 +16,17 @@ export default function Text() {
   }, []);
 
   return (
-    <div className="w-full max-w-3xl mx-auto text-center py-16">
-      <div className="transition-text">
+    <div className="w-full flex justify-center py-16">
+      <div className="w-[80%] max-w-4xl text-center">
         <p
-          className="text-lg md:text-2xl font-medium transition-all duration-300 text-left" // Added text-left here
+          className="text-lg md:text-2xl font-medium text-left"
           style={{
-            color: `rgb(${scrollPercent * 0}, ${scrollPercent * 0}, ${scrollPercent * 0})`,
+            color: `rgb(${255 - scrollPercent * 255}, ${255 - scrollPercent * 255}, ${255 - scrollPercent * 255})`,
             opacity: `${0.3 + scrollPercent * 0.7}`,
           }}
         >
-        Our startup is pioneering a digital carbon credit exchange platform to transform the way carbon credits are traded by offering a seamless, transparent exchange process.  Our digital exchange aims to enhance visibility, ensure fair pricing, and promote the participation for wide scale adoption to create a sustainable future.        </p>
+          Our startup is pioneering a digital carbon credit exchange platform to transform the way carbon credits are traded by offering a seamless, transparent exchange process. Our digital exchange aims to enhance visibility, ensure fair pricing, and promote the participation for wide scale adoption to create a sustainable future.
+        </p>
       </div>
     </div>
   );

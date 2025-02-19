@@ -1,7 +1,7 @@
 {
   "name": "client",
   "private": true,
-  "homepage": "https://carbonarray.co",
+  "homepage": "https://carbon-array.github.io/frontend/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

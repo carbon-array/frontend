@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/CarbonArray-Nav.png";
-import Logo2 from "../assets/google.png"; // Corrected path
-import { FiEye, FiEyeOff } from "react-icons/fi"; // Import eye icons
+import Logo2 from "../assets/google.png"; 
+import { FiEye, FiEyeOff } from "react-icons/fi"; 
 
 export default function Signup() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const navigate = useNavigate();
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 mt-20"> {/* Added margin-top here */}
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 mt-20"> 
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
-        {/* Logo at the top (Clickable) */}
         <div className="flex justify-center mb-4">
           <button onClick={() => navigate("/")}>
             <img src={Logo} alt="CarbonArray Logo" className="h-12 w-auto" />
@@ -59,14 +58,12 @@ export default function Signup() {
           </button>
         </form>
 
-        {/* OR Divider */}
         <div className="flex items-center my-4">
           <hr className="flex-grow border-gray-300" />
           <span className="px-2 text-gray-500 text-sm">OR</span>
           <hr className="flex-grow border-gray-300" />
         </div>
 
-        {/* Google Signup Button - Fixed Image Path */}
         <button className="w-full border py-2 rounded flex items-center justify-center gap-2 hover:bg-gray-200">
           <img src={Logo2} alt="Google Logo" className="h-5 w-5" />
           Sign Up with Google

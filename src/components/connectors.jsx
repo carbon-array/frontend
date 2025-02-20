@@ -6,8 +6,7 @@ import Logo4 from "../assets/airmo.png";
 
 export default function Connectors() {
   const connectors = [
-    {name: "", icon: Logo4, size: "h-16 w-auto", link: "https://www.airmo.io/"},
-    { name: "Picacity", icon: Logo, size: "h-16 w-auto", link: "https://picacity.ai/" },
+    {name: "Airmo", icon: Logo4, size: "h-16 w-auto", link: "https://www.airmo.io/"},
     { name: "UofT", icon: Logo1, size: "h-19 w-auto", link: "https://www.utoronto.ca/" },
     { name: "Hatchery", icon: Logo2, size: "h-16 w-full object-contain", link: "https://hatchery.engineering.utoronto.ca/" },
     { name: "Soren", icon: Logo3, size: "h-16 w-auto", link: "https://www.sorenhydrogen.com/" } // Update link if available

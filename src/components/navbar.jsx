@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import Logo from "../assets/CarbonArray-Nav.png"; // Adjust path if needed
+import { useNavigate } from "react-router-dom";
+import Logo from "../assets/CarbonArray-Nav.png";
 
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0);
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +18,7 @@ export default function Navbar() {
     const handleKeyPress = (event) => {
       if (event.key === "L" || event.key === "U") {
         event.preventDefault();
-        navigate("/login"); // Navigate to login when L or U is pressed
+        navigate("/login");
       }
     };
     window.addEventListener("keydown", handleKeyPress);
@@ -27,29 +27,24 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 rounded-b-lg z-50
-        ${scrollY > 50 ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-transparent"}`}
+      className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-4xl p-3 rounded-lg transition-all duration-300 z-50 backdrop-blur-md text-black ${
+        scrollY > 50 ? "bg-white/70 shadow-lg" : "bg-white"
+      }`}
     >
-      <div className="max-w-4xl mx-auto flex justify-between items-center font-sans px-4 py-2">
-        {/* Logo (Clickable) */}
+      <div className="flex justify-between items-center font-sans px-6 py-2">
         <button onClick={() => navigate("/")} className="flex items-center">
-          <img src={Logo} alt="CarbonArray Logo" className="h-15 w-auto cursor-pointer" />
+          <img src={Logo} alt="CarbonArray Logo" className="h-12 w-auto cursor-pointer" />
         </button>
-
-        {/* Navigation Links and Buttons */}
-        <div className="flex gap-6 ml-auto items-center">
-          {/* Login Button */}
-          <button 
-            className="text-black px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
+        <div className="flex gap-4 ml-auto items-center">
+          <button
+            className="text-black px-4 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
             onClick={() => navigate("/login")}
           >
             Login
           </button>
-
-          {/* Sign Up Button */}
-          <button 
-            className="bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
-            onClick={() => navigate("/signup")} // Navigate to Signup page
+          <button
+            className="bg-black text-white px-4 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
+            onClick={() => navigate("/signup")}
           >
             Sign Up
           </button>

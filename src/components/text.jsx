@@ -19,7 +19,7 @@ export default function Text() {
     <div className="w-full flex justify-center py-16">
       <div className="w-[80%] max-w-4xl text-center">
         <p
-          className="text-lg md:text-2xl font-medium text-left"
+          className="text-lg md:text-2xl font-medium text-center"
           style={{
             color: `rgb(${255 - scrollPercent * 255}, ${255 - scrollPercent * 255}, ${255 - scrollPercent * 255})`,
             opacity: `${0.3 + scrollPercent * 0.7}`,

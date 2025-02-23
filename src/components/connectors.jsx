@@ -1,16 +1,12 @@
 import Logo from "../assets/maya.png";
-import Logo1 from "../assets/uoft.png";
-import Logo2 from "../assets/hatchery.png"; 
 import Logo3 from "../assets/soren-removebg-preview.png";
 import Logo4 from "../assets/airmo.png";
 
 export default function Connectors() {
   const connectors = [
-    {name: "Airmo", icon: Logo4, size: "h-16 w-auto", link: "https://www.airmo.io/"},
+    { name: "Airmo", icon: Logo4, size: "h-16 w-auto", link: "https://www.airmo.io/" },
     { name: "Maya", icon: Logo, size: "h-16 w-auto", link: "https://www.maya-climate.com/" },
-    { name: "UofT", icon: Logo1, size: "h-19 w-auto", link: "https://www.utoronto.ca/" },
-    { name: "Hatchery", icon: Logo2, size: "h-16 w-full object-contain", link: "https://hatchery.engineering.utoronto.ca/" },
-    { name: "Soren", icon: Logo3, size: "h-16 w-auto", link: "https://www.sorenhydrogen.com/" } // Update link if available
+    { name: "Soren", icon: Logo3, size: "h-16 w-auto", link: "https://www.sorenhydrogen.com/" }
   ];
 
   return (
@@ -21,8 +17,7 @@ export default function Connectors() {
       </p>
 
       <div className="flex justify-center mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Render Connector Logos with Links */}
           {connectors.map((connector) => (
             <a

@@ -14,7 +14,7 @@ export default function WhyUs() {
     },
     {
       title: "Publicly Available",
-      description: "We’re building a platform for transparent carbon credit trading with fair pricing for buyers and sellers",
+      description: "We’re building a platform for transparent carbon credit trading with fair pricing for buyers and sellers.",
       icon: <FaGlobe className="text-4xl mb-2" />  // Replace with FaGlobe
     }
   ];

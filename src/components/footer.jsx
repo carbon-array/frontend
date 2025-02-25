@@ -18,9 +18,9 @@ const footer = () => {
             <div>
               <h3 className="font-semibold mb-2">Social</h3>
               <ul className="space-y-1">
-                <li><a href="#" className="hover:opacity-70">LinkedIn</a></li>
-                <li><a href="#" className="hover:opacity-70">Email</a></li>
-                <li><a href="#" className="hover:opacity-70">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/carbon-array" className="hover:opacity-70">LinkedIn</a></li>
+                <li><a href="mailto:carbonarray@gmail.com" className="hover:opacity-70">Email</a></li>
+                <li><a href="https://www.instagram.com/carbonarray/" className="hover:opacity-70">Instagram</a></li>
               </ul>
             </div>
             <div>

@@ -25,7 +25,7 @@ export default function Text() {
             opacity: `${0.3 + scrollPercent * 0.7}`,
           }}
         >
-          Our startup is pioneering a digital carbon credit exchange platform to transform the way carbon credits are traded by offering a seamless, transparent exchange process. Our digital exchange aims to enhance visibility, ensure fair pricing, and promote the participation for wide scale adoption to create a sustainable future.
+          Our mission is to make carbon trading accessible to all. Carbon Array is revolutionizing the market with a seamless, transparent exchange that ensures fair pricing, boosts visibility, and drives widespread adoption for a sustainable future.
         </p>
       </div>
     </div>

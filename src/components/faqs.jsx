@@ -2,6 +2,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
+// Import Google Font in index.html or globally in Tailwind
+import "@fontsource/inter"; // Optional if using a package manager
+
 const faqs = [
   {
     question: "What is a carbon credit?",
@@ -29,10 +32,10 @@ export default function FAQ() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-8 flex gap-12">
+    <div className="max-w-5xl mx-auto p-8 flex gap-12 font-inter">
       {/* Left Side - FAQ Heading */}
       <div className="w-1/4">
-        <h2 className="text-4xl font-bold">FAQ</h2>
+        <h2 className="text-4xl font-bold">FAQs</h2>
       </div>
 
       {/* Right Side - Questions */}

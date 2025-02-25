@@ -36,12 +36,18 @@ function App() {
                 <br />
                 <br />
                 <Hero />
-                <br />
-                <br />
                 <Text />
-                <br/>
-                <WhyUs/>
+                <div className="max-w-5xl mx-auto p-8">
+                  <hr className="my-2 border-t border-gray-200" />
+                </div>
+                <WhyUs />
+                <div className="max-w-5xl mx-auto p-8">
+                  <hr className="my-2 border-t border-gray-200" />
+                </div>
                 <Connectors />
+                <div className="max-w-5xl mx-auto p-8">
+                  <hr className="my-2 border-t border-gray-200" />
+                </div>
                 <FAQ />
               </>
             }

@@ -6,8 +6,9 @@ import Hero from "./components/hero.jsx";
 import Connectors from "./components/connectors.jsx";
 import Text from "./components/text.jsx";
 import FAQ from "./components/faqs.jsx";
-import Login from "./components/login.jsx"; // Import the Login page
-import Signup from "./components/signup.jsx"; // Import the Signup page
+import Login from "./components/login.jsx";
+import Signup from "./components/signup.jsx"; 
+import WhyUs from "./components/whyus.jsx";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -38,6 +39,8 @@ function App() {
                 <br />
                 <br />
                 <Text />
+                <br/>
+                <WhyUs/>
                 <Connectors />
                 <FAQ />
               </>

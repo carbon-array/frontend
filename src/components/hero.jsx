@@ -38,7 +38,7 @@ export default function Hero() {
           className="bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
           onClick={() => navigate("/signup")} // Navigate to Signup page on button click
         >
-          Sign Up <span className="ml-1 rounded border border-gray-600 px-1 font-mono">S</span>
+          Log In        
         </button>
       </div>
 

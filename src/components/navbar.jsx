@@ -37,16 +37,10 @@ export default function Navbar() {
         </button>
         <div className="flex gap-4 ml-auto items-center">
           <button
-            className="text-black px-4 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
-            onClick={() => navigate("/login")}
-          >
-            Login
-          </button>
-          <button
             className="bg-black text-white px-4 py-2 rounded-lg hover:opacity-80 flex items-center gap-2"
             onClick={() => navigate("/signup")}
           >
-            Sign Up
+            Login
           </button>
         </div>
       </div>
